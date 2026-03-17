@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晋善晋美酒道馆 - 招商合作</title>
+    <!-- 仅保留核心依赖，减少报错源 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2C3E50',
+                        gold: '#F39C12',
+                        dark: '#34495E',
+                        accent: '#E67E22',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans SC', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'elegant': '0 10px 30px rgba(0, 0, 0, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-gradient {
+                background: linear-gradient(135deg, #F39C12, #E67E22);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .bg-gradient-primary {
+                background: linear-gradient(135deg, #2C3E50, #34495E);
+            }
+            .bg-gradient-gold {
+                background: linear-gradient(135deg, #F39C12, #E67E22);
+            }
+            .card-hover:hover {
+                transform: translateY(-8px);
+                transition: all 0.4s ease;
+            }
+        }
+    </style>
+    
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #F8F9FA;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.85), rgba(52, 73, 94, 0.9)), 
+                        url('https://picsum.photos/1920/1080?wine') center/cover no-repeat;
+        }
+        /* 简化滚动条样式，减少兼容性问题 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #F39C12;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center">
+                        <span class="text-primary font-bold text-2xl">晋</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-gold transition-colors">首页</a>
+                    <a href="#videos" class="text-gray-700 hover:text-gold transition-colors">品牌宣传片</a>
+                    <a href="#about" class="text-gray-700 hover:text-gold transition-colors">关于我们</a>
+                    <a href="#contact" class="bg-gradient-primary text-white px-6 py-2 rounded-lg hover:shadow-lg">
+                        <i class="fa fa-phone mr-2"></i>联系我们
+                    </a>
+                </div>
+                <button class="md:hidden text-gray-700 text-2xl">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 英雄区域 -->
+    <section id="home" class="hero-section min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-4 py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="bg-white/10 text-gold px-6 py-2 rounded-full border border-white/20 text-sm font-medium">
+                    山西晋善晋美酒道馆管理公司
+                </span>
+                <h1 class="text-5xl md:text-7xl font-bold text-white my-6 text-shadow">
+                    酒道开天地<br>一馆定乾坤
+                </h1>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                    <a href="#videos" class="bg-gradient-gold text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-elegant">
+                        <i class="fa fa-play-circle mr-3"></i>观看品牌宣传片
+                    </a>
+                    <a href="#contact" class="bg-white/10 text-white border border-white/30 px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20">
+                        <i class="fa fa-handshake-o mr-3"></i>合作咨询
+                    </a>
+                </div>
+                
+                <!-- 核心优势 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+                    <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 card-hover">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-history text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">150年传承</h3>
+                        <p class="text-white/70">始于1875年集贤堡老烧坊，五代匠心坚守</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 card-hover">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-certificate text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">权威背书</h3>
+                        <p class="text-white/70">央视媒体见证，杏花村汾酒专业镇政府支持</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 card-hover">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fa fa-line-chart text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">商业价值</h3>
+                        <p class="text-white/70">高端圈层社交，品牌展示，合伙人赋能平台</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 视频展示区（仅展示卡片，移除播放功能，避免报错） -->
+    <section id="videos" class="py-20 bg-gradient-to-b from-light to-cream">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="bg-primary/10 text-primary px-6 py-2 rounded-full text-sm font-medium">
+                    招商视频展示
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold text-primary my-6">
+                    见证<span class="text-gradient">晋善晋美</span>的力量
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    通过品牌宣传片了解晋善晋美150年的品牌历程、央视权威见证、企业实力展示
+                </p>
+            </div>
+        
+            <!-- 视频卡片网格（仅展示，无点击播放） -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 视频卡片 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-elegant card-hover">
+                    <div class="relative overflow-hidden h-56">
+                        <img src="https://picsum.photos/800/450?wine1" alt="百年传承·壹伍零" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                            <div class="w-20 h-20 rounded-full bg-gold/90 flex items-center justify-center">
+                                <i class="fa fa-play text-white text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">
+                            150周年纪念
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">百年传承·壹伍零</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            一百五十年，于人生是岁月长河，于佳酿是匠心开篇。本片穿越时光长廊，带您见证晋善晋美的百年征程。
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500"><i class="fa fa-clock-o mr-1"></i> 15分钟</span>
+                            <span class="text-sm text-gold font-medium">品牌史诗</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 视频卡片 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-elegant card-hover">
+                    <div class="relative overflow-hidden h-56">
+                        <img src="https://picsum.photos/800/450?wine2" alt="央视镜头下的酒魂" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                            <div class="w-20 h-20 rounded-full bg-gold/90 flex items-center justify-center">
+                                <i class="fa fa-play text-white text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
+                            央视记录
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">央视镜头下的酒魂</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            央视镜头，记录真实。本片跟随CCTV的视角，深入探寻晋善晋美背后的酿造哲学与人文故事。
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500"><i class="fa fa-clock-o mr-1"></i> 10分钟</span>
+                            <span class="text-sm text-gold font-medium">权威见证</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 视频卡片 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-elegant card-hover">
+                    <div class="relative overflow-hidden h-56">
+                        <img src="https://picsum.photos/800/450?wine3" alt="大清香时代下的酒业新势力" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                            <div class="w-20 h-20 rounded-full bg-gold/90 flex items-center justify-center">
+                                <i class="fa fa-play text-white text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full">
+                            企业实力
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">大清香时代下的酒业新势力</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            从历史中走来，在当下焕新。本片全景展示晋善晋美今日风貌：生态酿造基地、现代化灌装线。
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500"><i class="fa fa-clock-o mr-1"></i> 4分钟</span>
+                            <span class="text-sm text-gold font-medium">企业风采</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 招商优势 -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <span class="bg-primary/10 text-primary px-6 py-2 rounded-full text-sm font-medium">
+                        为什么选择晋善晋美
+                    </span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-primary my-6">
+                        五大招商<span class="text-gradient">核心优势</span>
+                    </h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gradient-primary text-white p-8 rounded-2xl shadow-elegant card-hover">
+                        <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa fa-trophy text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">品牌优势</h3>
+                        <p class="text-white/80">
+                            150年历史传承，从1875年集贤堡老烧坊到现代酒业集团，五代匠心坚守。
+                        </p>
+                    </div>
+                    <div class="bg-gradient-primary text-white p-8 rounded-2xl shadow-elegant card-hover">
+                        <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa fa-certificate text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">权威背书</h3>
+                        <p class="text-white/80">
+                            央视媒体专题报道，山西杏花村汾酒专业镇政府支持，品质与信誉双重保障。
+                        </p>
+                    </div>
+                    <div class="bg-gradient-primary text-white p-8 rounded-2xl shadow-elegant card-hover">
+                        <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa fa-map-marker text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">区位优势</h3>
+                        <p class="text-white/80">
+                            太原旗舰店位于柳巷食品街核心商圈，年度千万人流，品牌展示绝佳位置。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 联系我们 -->
+        <section id="contact" class="py-20 bg-gradient-primary text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <span class="bg-white/10 text-white px-6 py-2 rounded-full text-sm font-medium">
+                        开启合作之旅
+                    </span>
+                    <h2 class="text-4xl md:text-5xl font-bold my-6">
+                        与晋善晋美<span class="text-gradient">共创辉煌</span>
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                        <div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                <i class="fa fa-phone text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">招商热线</h3>
+                            <p class="text-white/80 text-lg mb-2">13353513623</p>
+                            <p class="text-white/60">周一至周日 9:00-18:00</p>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                <i class="fa fa-envelope text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">招商邮箱</h3>
+                            <p class="text-white/80 text-lg mb-2">1803602889@qq.com</p>
+                            <p class="text-white/60">24小时内回复咨询</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                        <h3 class="text-xl font-bold mb-6">在线咨询</h3>
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <input type="text" placeholder="姓名" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none">
+                                <input type="tel" placeholder="电话" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none">
+                            </div>
+                            <input type="text" placeholder="意向区域" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none">
+                            <textarea placeholder="留言内容" rows="4" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none"></textarea>
+                            <button type="button" class="w-full bg-gradient-gold text-primary font-bold py-4 rounded-lg hover:shadow-lg">
+                                提交咨询
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center">
+                            <span class="text-primary font-bold text-2xl">晋</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">晋善晋美酒道馆</h3>
+                            <p class="text-gray-400">山西晋善晋美酒道馆管理公司</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        150年传承，五代匠心。致力于传承和弘扬中国传统白酒文化。
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">快速链接</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">首页</a></li>
+                        <li><a href="#videos" class="text-gray-400 hover:text-white">招商视频</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">关于我们</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">联系方式</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <i class="fa fa-map-marker text-gold mt-1"></i>
+                            <span class="text-gray-400">山西省太原市迎泽区柳巷食品街88号</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa fa-phone text-gold"></i>
+                            <span class="text-gray-400">13353513623</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa fa-envelope text-gold"></i>
+                            <span class="text-gray-400">1803602889@qq.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 text-center">
+                <p class="text-gray-500 text-sm">
+                    © 2026 山西晋善晋美酒道馆管理公司. 保留所有权利.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
